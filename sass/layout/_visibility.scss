@@ -1,0 +1,36 @@
+/*	==================================================================================
+ *	visibility
+ *==================================================================================*/
+/* --------------------------------------- */
+/*  general
+/* --------------------------------------- */
+.hide{
+	display: none;
+}
+/* --------------------------------------- */
+/*  small
+/* --------------------------------------- */
+
+@media only screen {
+	.show-small, .hide-medium, .hide-large {display: inherit !important; }
+	.hide-small, .show-large, .show-medium {display: none !important;}
+
+}
+
+/* --------------------------------------- */
+/*  medium
+/* --------------------------------------- */
+
+@media only screen and (min-width: 40.063em) {
+	.show-medium, .hide-small,.hide-large {display: inherit !important; }
+	.hide-medium, .show-large, .show-small {display: none !important; }
+}
+
+/* --------------------------------------- */
+/*  large
+/* --------------------------------------- */
+
+@media only screen and (min-width: 64.063em) {
+	.show-large,.hide-small, .hide-medium {display: inherit !important; }
+	.hide-large, .show-medium, .show-small {display: none !important;}
+}

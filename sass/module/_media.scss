@@ -1,0 +1,29 @@
+/*	==================================================================================
+ *	Media
+ *==================================================================================*/
+
+/*----------------------------------------------------------------------------*/
+/* 	@ Thumbnails		
+/*----------------------------------------------------------------------------*/
+
+.thumbs, .thumbs-circle {
+	line-height: 0;
+	display: inline-block;
+	background: $thumbs-background;
+	border: $thumbs-border;
+	max-width: 100%;
+
+	@include box-shadow($thumbs-shadow);
+	@include transition-duration();	;	
+
+
+}
+.thumbs.dark{
+	background: $thumbs-background-dark;
+	border: $thumbs-border-dark;
+	@include box-shadow($thumbs-shadow-dark);
+}
+
+.thumbs-circle { overflow: hidden; border-radius: 50%;}
+
+

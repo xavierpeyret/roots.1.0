@@ -1,0 +1,152 @@
+/*	==================================================================================
+ *	Site settings
+ *==================================================================================*/
+
+@charset "UTF-8";
+/*----------------------------------------------------------------------------*/
+/* 	@General						
+/*----------------------------------------------------------------------------*/
+$default-transition-duration : .5s;
+$margin: 1.85em; 
+/*----------------------------------------------------------------------------*/
+/* 	@Colors 							
+/*----------------------------------------------------------------------------*/
+/* Graphic chart 	----------*/
+$blue-dark   : #0c141f;
+$blue-medium : #6fc3df;
+$blue-light  : #e6ffff ;
+$orange-dark   : #df740c ;
+$orange-medium : #f1bc2c ;
+$orange-light  : #ffe64d ;
+/* FLAT COLOR 	----------*/
+$turquoise 	 :  #1abc9c; // turquoise 
+$greensea 	 :  #16A085; // turquoise foncé
+$emerland 	 :  #2ecc71; // vert
+$nephritis 	 :  #27ae60; // vert foncé
+$peterriver  :  #3498db; // bleu
+$belizehole  :  #2980b9; // bleu foncé
+$amethyst 	 :  #9b59b6; // mauve
+$wisteria 	 :  #8e44ad; // mauve foncé
+$wetasphalt  :  #34495e; // goudron 
+$midnightblue:  #2C3E50; // goudron foncé
+$sunflower 	 :  #f1c40f; // jaune orangé
+$orange 	 :  #F39C12; // jaune orangé foncé
+$carrot 	 :  #e67e22; // orange 
+$pumpkin 	 :  #D35400; // orange foncé
+$alizarin 	 :  #e74c3c; // rouge 
+$pomegranate :  #c0392b; // rouge foncé
+$clouds 	 :  #ECF0F1; // gris
+$silver 	 :  #bdc3c7; // gris medium 1
+$concrete 	 :  #95a5a6; // gris medium 2
+$asbestos 	 :  #7F8C8D; // gris medium 3
+$asbestos-dark: #373E3E; // gris foncé
+/* social colors 	----------*/
+$facebook : #3b5998;
+$twitter  : #43bfe1;
+/* global colors 	----------*/
+$color-1-1: $asbestos-dark;
+$color-1-2: $asbestos;
+$color-1-3: $silver;
+$color-2-1: $pumpkin ;
+$color-2-2: $belizehole;
+$color-2-3: $orange-dark;
+/* btn standar color ---------*/
+$btn-color-bg    : $greensea ;
+$btn-color-text  : $clouds  ;
+/* labels color ---------*/
+$primary: $asbestos;
+$success: $nephritis;
+$warning: $orange ;
+$alert: $pomegranate;
+/* labels color ---------*/
+$input-color-bg   		  : lighten($silver,25%) ;
+$input-color-border 	  : $silver ;
+$input-color-shadow-inset : inset 0 1px 2px rgba($color-1-2,0.1) ;
+$input-color-shadow-focus : 0 0 2px rgba($color-1-1,0.5) ;
+$input-color-text   	  : $color-1-1 ;
+/*----------------------------------------------------------------------------*/
+/* 	@body color						
+/*----------------------------------------------------------------------------*/
+$body-background : lighten($clouds,5%);
+/*----------------------------------------------------------------------------*/
+/* 	@Typography 						
+/*----------------------------------------------------------------------------*/
+$font-size : 14px;
+/* text fonts 		----------*/
+$font-1:  sans-serif;
+$font-2: sans-serif;
+/* text color 		----------*/
+$text-color-base   		: $color-1-1;
+$text-color-link   		: $belizehole ;
+$text-color-title 		: $wetasphalt;
+$text-color-strong 		: $wetasphalt;
+$text-color-second 		: $wetasphalt;
+$text-color-selection 	: $sunflower ;
+/* text shadow		----------*/
+$text-shadow-base 	: 0 0 0px $color-1-2;
+$text-shadow-strong : 0 0 0px $color-2-2;
+$text-shadow-title  : 0 0 0px $color-2-2;
+$text-shadow-second : 0 0 0px $color-2-2;
+
+$blockote-border-color: $asbestos ; 
+/*----------------------------------------------------------------------------*/
+/* 	@panel		
+/*----------------------------------------------------------------------------*/
+$panel-background : lighten($clouds,4%);
+$panel-border 	  : $asbestos;
+$panel-shadow 	  : 0px 0px 0px rgba($panel-background,.2);
+
+$panel-dark-background : $wetasphalt;
+$panel-dark-font-color : #FFFFFF;
+/*----------------------------------------------------------------------------*/
+/* 	@Block			 thumbs
+/*----------------------------------------------------------------------------*/
+$thumbs-background : $panel-background;
+$thumbs-border 	   : solid 1px darken($thumbs-background,10%);
+$thumbs-shadow 	   : 1px 0 5px rgba($thumbs-background,.2);
+
+$thumbs-background-dark : $asbestos ;
+$thumbs-border-dark 	: solid 1px darken($asbestos ,10%);
+$thumbs-shadow-dark 	: 1px 0 5px rgba($asbestos ,.2);
+/*----------------------------------------------------------------------------*/
+/* 	@Block			 topbar
+/*----------------------------------------------------------------------------*/
+$topbar-position 		 : fixed;
+$topbar-height 			 : 54px;
+$topbar-background-color : $asbestos-dark ;
+$topbar-font-color 		 : #FFFFFF;
+/*----------------------------------------------------------------------------*/
+/* 	@Block			 navigation
+/*----------------------------------------------------------------------------*/
+$navigation-position 			: absolute;
+$navigation-width 			 	: 250px;
+$navigation-background-color 	: $midnightblue;
+$navigation-font-color 		: #FFFFFF;
+$navigation-border-color 		: $greensea;
+/*----------------------------------------------------------------------------*/
+/* 	@breadcrumb
+/*----------------------------------------------------------------------------*/
+$breadcrumb-background 		: $panel-background  ;
+/*----------------------------------------------------------------------------*/
+/* 	@table
+/*----------------------------------------------------------------------------*/
+$table-background 		: $panel-background  ;
+/*----------------------------------------------------------------------------*/
+/* 	@dropdown
+/*----------------------------------------------------------------------------*/
+$dropdown-background 	   : $panel-background  ;
+$dropdown-border-color 	   : darken($panel-background,16%)  ;
+$dropdown-background-hover : $midnightblue;
+$dropdown-font-color 	   : $midnightblue  ;
+$dropdown-font-color-hover : $panel-background  ;
+/*----------------------------------------------------------------------------*/
+/* 	@slider
+/*----------------------------------------------------------------------------*/
+$slider-color 	    : $silver;
+$slider-font-color 	: $clouds;
+/*----------------------------------------------------------------------------*/
+/* 	@modal
+/*----------------------------------------------------------------------------*/
+$modal-ovelay 	    : rgba(darken($midnightblue,12%), 0.95);
+$modal-background 	: $clouds;
+$modal-close-color 	: $midnightblue;

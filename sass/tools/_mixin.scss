@@ -1,0 +1,37 @@
+/*  ==================================================================================
+ *  Base
+ *==================================================================================*/
+
+/* --------------------------------------- */
+/* @Animation keyframe
+/* --------------------------------------- */
+
+// Exemple d'utilistaion 
+// 
+// @include keyframes(name) {
+//   0% {
+//     background-color: #ffccf2;
+//   }
+//   50% {
+//     background-color: #ccffcc;
+//   }
+//   100% {
+//     background-color: #ccffff;
+//   } 
+// }
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+

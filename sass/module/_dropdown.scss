@@ -1,0 +1,39 @@
+/*  ==================================================================================
+ *  Dropdown
+ *==================================================================================*/
+.dropdown-wrapper{display: inline-block;}
+.dropdown-toogle{position: relative}
+.dropdown{
+	position: absolute;
+	z-index: 9999;
+	margin: $margin/4 0 0 0;
+	padding: 0;
+	display: none;
+	background: $dropdown-background ;
+	border:1px solid $dropdown-border-color;
+
+	li{
+		//opacity: 0;
+		list-style: none;
+		a{
+			display: block;
+			height: 100%;
+			padding: 0.5rem 1rem ;
+
+			color: $dropdown-font-color ;
+		}
+		a:hover{
+			background: $dropdown-background-hover;
+			color: $dropdown-font-color-hover ;
+		}
+	}
+
+}
+.dropdown-right{
+	right: 13px;
+	i{margin-left: 1rem;}
+}
+
+	
+
+	

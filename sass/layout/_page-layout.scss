@@ -1,0 +1,12 @@
+
+.page-container{ 
+	min-height: 100%;
+	//margin: 0 0 0 $navigation-width;
+	padding-top: $topbar-height;
+}
+.navigation-hide .page-container{
+	margin: 0;
+}
+.page-content{
+	margin: 0 ;
+}

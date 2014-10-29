@@ -1,0 +1,110 @@
+/*  ==================================================================================
+ *  formulaire
+ *==================================================================================*/
+
+form {
+	margin: 0 0 1rem; 
+}
+
+/* --------------------------------------- */
+/* input 
+/* --------------------------------------- */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+	
+	background-color: $input-color-bg;
+	font-family: inherit;
+	border: 1px solid  $input-color-border;
+	box-shadow: $input-color-shadow-inset;
+	color: rgba($input-color-text, 0.75);
+	display: block;
+	font-size: 0.875rem;
+	margin: 0 0 1rem 0;
+	padding: 0.5rem;
+	height: 2.3125rem;
+	width: 100%;
+	
+	@include transition-duration(); 
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+select:focus {
+	box-shadow: $input-color-shadow-focus ;
+	border-color: lighten($input-color-border,5%); 
+
+	background: lighten($input-color-bg,5%);
+	border-color: lighten($input-color-border,25%);
+	outline: none; 
+}
+/* hauteur textarea  */
+textarea[rows] { height: auto; }
+
+/* --------------------------------------- */
+/* input file Styles 
+/* --------------------------------------- */
+.input-file{
+	overflow: hidden;
+    position: relative;
+}
+.input-file [type=file] {
+    cursor: inherit;
+    //display: block;
+    //font-size: 999px;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}
+/* --------------------------------------- */
+/* Label Styles 
+/* --------------------------------------- */
+label {
+	font-size: 0.875rem;
+	font-weight: bold;
+	cursor: pointer;
+	display: block;
+	font-weight: normal;
+	line-height: 1.5;
+	margin-bottom: 0;
+	/* Styles for required inputs */ 
+}
+label.right {
+	float: none !important;
+	text-align: right; 
+}
+label.inline {
+	margin: 0 0 1rem 0;
+	padding: 0.5625rem 0; 
+}
+
+

@@ -1,0 +1,135 @@
+/*	==================================================================================
+ *	Base
+ *==================================================================================*/
+
+*{box-sizing: border-box;}
+/*----------------------------------------------------------------------------*/
+/* 	@ Global				
+/*----------------------------------------------------------------------------*/
+html, body {height: 100%;}
+body {
+	position: relative;
+
+	background: $body-background;
+	
+	font-family: $font-1;
+	font-size: $font-size;
+	color : $color-1-1;
+}
+html, body , button, input, 
+select, textarea { font-family: $font-1; }
+
+/*----------------------------------------------------------------------------*/
+/* 	@ typography 						
+/*----------------------------------------------------------------------------*/
+
+/* --------------------------------------- */
+/* @group headings
+/* --------------------------------------- */
+h1, h2, h3, h4, h5, h6{ 
+	font-family: $font-2;
+	line-height: 1.1;
+	text-align: left;
+	color: $text-color-title;
+	text-shadow: $text-shadow-second;
+	small{
+		font-size: 70%;
+		color: lighten($text-color-title, 20%) ;
+	}
+} 
+
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.85rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.85rem; }
+
+
+/* --------------------------------------- */
+/* @group text
+/* --------------------------------------- */
+
+p {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	text-align: left;
+	text-shadow: $text-shadow-base;
+	a:hover{
+		text-decoration: underline;
+	}
+}
+.text-lead{
+	font-size: 1.25rem;
+	font-weight: bold;
+
+}
+.text-left{text-align: left;}
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+.text-justify{text-align: justify;}
+
+span { display: inline-block;}
+strong, b { 
+	font-weight: bold;
+	color: darken($text-color-base,5%) ;
+	text-shadow: $text-shadow-strong; 
+}
+
+blockquote{
+	padding: 10px 20px;
+	border-left: 4px solid $blockote-border-color;
+	p{
+		margin: 0px;
+
+		font-size: 1.115rem;
+	}
+}
+
+::-moz-selection{
+	background:$text-color-selection;
+	text-shadow: none;
+}
+::selection{
+	background:$text-color-selection;
+	text-shadow: none;
+}
+
+
+
+/* --------------------------------------- */
+/* @group link	
+/* --------------------------------------- */
+a {
+	color: $text-color-link;
+	text-decoration: none;
+	@include transition-duration();
+}
+a:hover {
+	color: lighten($text-color-link,20%);
+	text-shadow: $text-shadow-base,$text-shadow-base, $text-shadow-base;
+	background: none;
+}
+
+/* --------------------------------------- */
+/* @group media	
+/* --------------------------------------- */
+
+img {
+  display: inline-block;
+  vertical-align: middle; 
+  max-width: 100%;
+  height: auto; 
+  -ms-interpolation-mode: bicubic;
+}
+
+/* --------------------------------------- */
+/* @group other
+/* --------------------------------------- */
+
+.left {float: left !important;}
+.right {float: right !important;}
+
+.clearfix{clear: both;}
+

@@ -1,0 +1,297 @@
+
+
+$loader-size: 40px ;
+$loader-width: 4px;
+$loader-shadow: 0px 0px 0px rgba($orange,1);
+$loader-color-1: $asbestos-dark;
+$loader-color-2: $pumpkin;
+
+/* --------------------------------------- */
+/* $loader global
+/* --------------------------------------- */
+.loader {
+	height: $loader-size;
+	width: $loader-size;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+
+/* --------------------------------------- */
+/* $loader quart de cercle 
+/* --------------------------------------- */
+/* rond back  */
+.loader-quart {
+	border-radius: 50%;
+	height: $loader-size;
+	width: $loader-size;
+	border:  $loader-width solid rgba($loader-color-1,0.1);
+	//background: red;
+}
+
+/* grand loader */
+.loader-quart:after{
+	content:'';
+	position: absolute;
+	top: 0px; 
+	left: 0px;
+	bottom: 0px;
+	right: 0px; 
+	height: $loader-size;
+	width: $loader-size;
+	border-radius: 50%;
+	border: $loader-width solid transparent;
+	border-top-color : $loader-color-2;
+
+	@include box-shadow($loader-shadow);
+
+	-webkit-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
+}
+
+/* --------------------------------------- */
+/* $loader double quart de cercle 
+/* --------------------------------------- */
+/* rond back  */
+.loader-double-quart {
+	border-radius: 50%;
+	height: $loader-size;
+	width: $loader-size;
+	border: $loader-size/4 solid rgba($loader-color-1,0.1);
+	//background: red;
+}
+/* petit loader */
+.loader-double-quart:before{
+	content:'';
+	position: absolute;
+	top: $loader-size/4; 
+	left: $loader-size/4;
+	bottom: $loader-size/4;
+	right: $loader-size/4; 
+	height: $loader-size/2;
+	width: $loader-size/2;
+	border-radius: 50%;
+	border: $loader-width solid transparent;
+	border-top-color 	: $loader-color-2;
+	border-bottom-color : $loader-color-2;
+
+	@include box-shadow($loader-shadow);
+
+	-webkit-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
+
+	-webkit-animation-delay: 0.5s; /* Chrome, Safari, Opera */
+    animation-delay: 0.5s;
+}
+/* grand loader */
+.loader-double-quart:after{
+	content:'';
+	position: absolute;
+	top: 0px; 
+	left: 0px;
+	bottom: 0px;
+	right: 0px; 
+	height: $loader-size;
+	width: $loader-size;
+	border-radius: 50%;
+	border: $loader-width solid transparent;
+	border-top-color 	: $loader-color-2;
+	border-bottom-color : $loader-color-2;
+
+	@include box-shadow($loader-shadow);
+
+	-webkit-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
+}
+
+/* --------------------------------------- */
+/* $loader full quart de cercle 
+/* --------------------------------------- */
+/* rond back  */
+.loader-full-quart {
+	border-radius: 50%;
+	height: $loader-size;
+	width: $loader-size;
+	border: $loader-size/2 solid rgba($loader-color-1,0.1);
+	//background: red;
+}
+
+/* grand loader */
+.loader-full-quart:after{
+	content:'';
+	position: absolute;
+	top: 0px; 
+	left: 0px;
+	bottom: 0px;
+	right: 0px; 
+	height: $loader-size;
+	width: $loader-size;
+	border-radius: 50%;
+	border: $loader-size/2 solid transparent;
+	border-top-color 	: $loader-color-2;
+	border-bottom-color : $loader-color-2;
+
+	@include box-shadow($loader-shadow);
+
+	-webkit-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
+}
+
+/* --------------------------------------- */
+/* $loader double quart de cercle 
+/* --------------------------------------- */
+/* rond back  */
+.loader-double-quart {
+	border-radius: 50%;
+	height: $loader-size;
+	width: $loader-size;
+	border: $loader-size/4 solid rgba($loader-color-1,0.1);
+	//background: red;
+}
+/* petit loader */
+.loader-double-quart:before{
+	content:'';
+	position: absolute;
+	top: $loader-size/4; 
+	left: $loader-size/4;
+	bottom: $loader-size/4;
+	right: $loader-size/4; 
+	height: $loader-size/2;
+	width: $loader-size/2;
+	border-radius: 50%;
+	border: $loader-width solid transparent;
+	border-top-color 	: $loader-color-2;
+	border-bottom-color : $loader-color-2;
+
+	@include box-shadow($loader-shadow);
+
+	-webkit-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
+
+	-webkit-animation-delay: 0.5s; /* Chrome, Safari, Opera */
+    animation-delay: 0.5s;
+}
+/* grand loader */
+.loader-double-quart:after{
+	content:'';
+	position: absolute;
+	top: 0px; 
+	left: 0px;
+	bottom: 0px;
+	right: 0px; 
+	height: $loader-size;
+	width: $loader-size;
+	border-radius: 50%;
+	border: $loader-width solid transparent;
+	border-top-color 	: $loader-color-2;
+	border-bottom-color : $loader-color-2;
+
+	@include box-shadow($loader-shadow);
+
+	-webkit-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
+}
+/* --------------------------------------- */
+/* $loader double quart de cercle 
+/* --------------------------------------- */
+/* rond back  */
+.loader-quart-inveret {
+	border-radius: 50%;
+	height: $loader-size;
+	width: $loader-size;
+	border: $loader-size/4 solid rgba($loader-color-1,0.1);
+	//background: red;
+}
+/* petit loader */
+.loader-quart-inveret:before{
+	content:'';
+	position: absolute;
+	top: $loader-size/4; 
+	left: $loader-size/4;
+	bottom: $loader-size/4;
+	right: $loader-size/4; 
+	height: $loader-size/2;
+	width: $loader-size/2;
+	border-radius: 50%;
+	border: $loader-width solid transparent;
+	border-top-color 	: $loader-color-2;
+	border-bottom-color : $loader-color-2;
+
+	@include box-shadow($loader-shadow);
+
+	-webkit-animation: spinReverse 1s ease infinite;
+	animation: spinReverse 1s ease infinite;
+
+	-webkit-animation-delay: 0.5s; /* Chrome, Safari, Opera */
+    animation-delay: 0.5s;
+}
+/* grand loader */
+.loader-quart-inveret:after{
+	content:'';
+	position: absolute;
+	top: 0px; 
+	left: 0px;
+	bottom: 0px;
+	right: 0px; 
+	height: $loader-size;
+	width: $loader-size;
+	border-radius: 50%;
+	border: $loader-width solid transparent;
+	border-top-color 	: $loader-color-2;
+	border-bottom-color : $loader-color-2;
+
+	@include box-shadow($loader-shadow);
+
+	-webkit-animation: spin 1s ease infinite;
+	animation: spin 1s ease infinite;
+}
+
+/* --------------------------------------- */
+/* $loader double quart de cercle 
+/* --------------------------------------- */
+
+.loader-pulse {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  right: 0;
+  bottom: 0;
+  width: 0; 
+  height: 0; 
+  margin:auto;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 $loader-size/2 $loader-color-2;
+
+  -webkit-animation: pulse 1s ease-out infinite;
+  animation: load 1s ease-out infinite;
+}
+
+
+
+@include keyframes(pulse) {
+  100% {
+    width: $loader-size;
+    height: $loader-size;
+    box-shadow: none;
+    //-webkit-filter: blur(2px);
+    //border-radius: 20%; 
+  }
+}
+
+
+
+
+
+/* --------------------------------------- */
+/* $animation
+/* --------------------------------------- */
+
+@include keyframes(spin) {
+  0%   { @include rotate(0deg);}  
+  100% { @include rotate(360deg);} 
+}
+@include keyframes(spinReverse) {
+  0%   { @include rotate(0deg);}  
+  100% { @include rotate(-360deg);} 
+}
+

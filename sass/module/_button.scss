@@ -1,0 +1,99 @@
+/*  ==================================================================================
+ *  boutons
+ *==================================================================================*/
+
+/* --------------------------------------- */
+/*  general
+/* --------------------------------------- */
+button, .btn,{
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	padding-top: 0.88889rem;
+	padding-right: 1.77778rem;
+	padding-bottom: 0.94444rem;
+	padding-left: 1.77778rem;
+	margin-bottom: 0.94444rem;
+	background-color: $btn-color-bg ;
+	border-color: lighten($btn-color-bg,20%);
+	
+	color: $btn-color-text;
+	@include transition-duration(); 
+}
+button:hover, button:focus, .btn:hover, .btn:focus {
+    background-color: lighten($btn-color-bg,10%);
+    color: lighten($btn-color-text,10%);
+}
+/* --------------------------------------- */
+/*  state
+/* --------------------------------------- */
+/* primary */
+button.primary, .btn.primary{
+	background-color: $primary ;
+	border-color: lighten($primary,20%);
+}
+button.primary:hover, button.primary:focus, .btn.primary:hover, .btn.primary:focus {
+    background-color: lighten($primary,10%);
+}
+/* success */
+button.success, .btn.success{
+	background-color: $success ;
+	border-color: lighten($success,20%);
+}
+button.success:hover, button.success:focus, .btn.success:hover, .btn.success:focus {
+    background-color: lighten($success,10%);
+}
+/* warning */
+button.warning, .btn.warning{
+	background-color: $warning ;
+	border-color: lighten($warning,20%);
+}
+button.warning:hover, button.warning:focus, .btn.warning:hover, .btn.warning:focus {
+    background-color: lighten($warning,10%);
+}
+/* alert */
+button.alert, .btn.alert{
+	background-color: $alert ;
+	border-color: lighten($alert,20%);
+}
+button.alert:hover, button.alert:focus, .btn.alert:hover, .btn.alert:focus {
+    background-color: lighten($alert,10%);
+}
+
+/* --------------------------------------- */
+/*  size
+/* --------------------------------------- */
+/* bouton small */
+button.small, .btn.small {
+	padding-top: 0.77778rem;
+	padding-right: 1.55556rem;
+	padding-bottom: 0.83333rem;
+	padding-left: 1.55556rem;
+	font-size: 0.72222rem;
+}
+/* bouton expand */
+button.expand, .btn.expand {
+	padding-right: 0;
+	padding-left: 0;
+	width: 100%; 
+}
+/* --------------------------------------- */
+/*  icon
+/* --------------------------------------- */
+button.icon, .btn.icon {
+	padding-top: 0.3rem;
+	padding-right: 0.4rem;
+	padding-bottom: 0.3rem;
+	padding-left: 0.4rem;
+	font-size: 1.125rem;
+}
+/* --------------------------------------- */
+/*  btn modal
+/* --------------------------------------- */
+.btn-remodal {
+    display: inline-block;
+    width: 120px;
+
+    text-align: center;
+}
