@@ -2139,8 +2139,8 @@ button, .btn {
   padding-bottom: 0.94444rem;
   padding-left: 1.77778rem;
   margin-bottom: 0.94444rem;
-  background-color: #16A085;
-  border-color: #38e4c2;
+  background-color: #2980b9;
+  border-color: #6ab0de;
   color: #ECF0F1;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
@@ -2150,7 +2150,7 @@ button, .btn {
 
 /* line 24, ../sass/module/_button.scss */
 button:hover, button:focus, .btn:hover, .btn:focus {
-  background-color: #1ccdaa;
+  background-color: #409ad5;
   color: white;
 }
 
