@@ -2,10 +2,13 @@
  *	Base
  *==================================================================================*/
 
-*{box-sizing: border-box;}
+
 /*----------------------------------------------------------------------------*/
 /* 	@ Global				
 /*----------------------------------------------------------------------------*/
+
+*{box-sizing: border-box;}
+
 html, body {height: 100%;}
 body {
 	position: relative;
@@ -16,6 +19,7 @@ body {
 	font-size: $font-size;
 	color : $asbestos-dark;
 }
+
 html, body , button, input, 
 select, textarea { font-family: $font-1; }
 
@@ -37,7 +41,6 @@ h1, h2, h3, h4, h5, h6{
 		color: lighten($text-color-title, 20%) ;
 	}
 } 
-
 
 h1 { font-size: 2rem; }
 h2 { font-size: 1.85rem; }
@@ -96,8 +99,6 @@ blockquote{
 	text-shadow: none;
 }
 
-
-
 /* --------------------------------------- */
 /* @group link	
 /* --------------------------------------- */
@@ -132,4 +133,3 @@ img {
 .right {float: right !important;}
 
 .clearfix{clear: both;}
-
