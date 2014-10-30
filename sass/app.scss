@@ -8,14 +8,15 @@
  *
  *==================================================================================*/
 
-
+@charset "UTF-8";
 
 /* compass */
 @import "compass";
 
 /* Tools */
 @import "tools/mixin";
-@import "tools/site-settings";
+@import "tools/colors";
+@import "tools/settings";
 
 /* Base */
 @import "base/reset";
@@ -34,7 +35,7 @@
 @import "module/navigation";
 @import "module/dropdown";
 @import "module/panels";
-@import "module/media";
+@import "module/thumbnails";
 @import "module/loader";
 @import "module/button";
 @import "module/table";

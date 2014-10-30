@@ -8,7 +8,7 @@
 
 
 	a{
-		color: $color-1-1;
+		color: $text-color-base ;
 	}
 }
 .breadcrumb-list{
@@ -21,5 +21,5 @@
 }
 .breadcrumb-list>li+li:before{
 	content: "/\00a0";
-	color: lighten($color-1-1,50%);
+	color: lighten($text-color-base ,50%);
 }

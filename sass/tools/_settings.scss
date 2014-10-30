@@ -1,0 +1,146 @@
+/*	==================================================================================
+ *	Site settings
+ *==================================================================================*/
+
+
+/*-----------------------------------*/
+/* 	@General						
+/*-----------------------------------*/
+
+$default-transition-duration : .5s;
+$margin: 1.85em; 
+
+/* background color ---------*/
+$body-background : lighten($clouds,5%);
+
+/* labels color ---------*/
+$primary: $asbestos;
+$success: $nephritis;
+$warning: $orange ;
+$alert: $pomegranate;
+
+/*-----------------------------------*/
+/* 	@Typography 						
+/*-----------------------------------*/
+
+$font-size : 14px;
+
+/* text fonts 		----------*/
+$font-1:  sans-serif;
+$font-2: sans-serif;
+
+/* text color 		----------*/
+$text-color-base   		: $asbestos-dark;
+$text-color-link   		: $belizehole ;
+$text-color-title 		: $wetasphalt;
+$text-color-strong 		: $wetasphalt;
+$text-color-second 		: $wetasphalt;
+$text-color-selection 	: $sunflower ;
+
+/* text shadow		----------*/
+$text-shadow-base 	: 0 0 0px $asbestos;
+$text-shadow-strong : 0 0 0px $belizehole;
+$text-shadow-title  : 0 0 0px $belizehole;
+$text-shadow-second : 0 0 0px $belizehole;
+
+/* text anotation	----------*/
+$blockote-border-color : $asbestos ; 
+
+/*-----------------------------------*/
+/* 	@Panel		
+/*-----------------------------------*/
+
+$panel-background : lighten($clouds,4%);
+$panel-border 	  : $asbestos;
+$panel-shadow 	  : 0px 0px 0px rgba($panel-background,.2);
+
+/* dark ----------*/
+$panel-dark-background : $wetasphalt;
+$panel-dark-font-color : #FFFFFF;
+
+/*-----------------------------------*/
+/* 	@Media & Images
+/*-----------------------------------*/
+
+/* lightbox		----------*/
+$lightbox-background : $silver;
+$lightbox-border 	 : $asbestos;
+
+/* Slider  ---------*/
+$slider-color 	    : $silver;
+$slider-font-color 	: $clouds;
+
+/* thumbnails	----------*/
+$thumbs-background : $panel-background;
+$thumbs-border 	   : solid 1px darken($thumbs-background,10%);
+$thumbs-shadow 	   : 1px 0 5px rgba($thumbs-background,.2);
+
+/* thumbnails dark ----------*/
+$thumbs-background-dark : $asbestos ;
+$thumbs-border-dark 	: solid 1px darken($asbestos ,10%);
+$thumbs-shadow-dark 	: 1px 0 5px rgba($asbestos ,.2);
+
+/*-----------------------------------*/
+/* 	@navigation & Topbar
+/*-----------------------------------*/
+
+/* topbar  ---------*/
+$topbar-position 		 : fixed;
+$topbar-height 			 : 54px;
+$topbar-background-color : $asbestos-dark ;
+$topbar-font-color 		 : #FFFFFF;
+
+/* navigation  ---------*/
+$navigation-position 			: absolute;
+$navigation-width 			 	: 250px;
+$navigation-background-color 	: $midnightblue;
+$navigation-font-color 		: #FFFFFF;
+$navigation-border-color 		: $greensea;
+
+/*-----------------------------------*/
+/* 	@breadcrumb
+/*-----------------------------------*/
+
+$breadcrumb-background 		: $panel-background  ;
+
+/*-----------------------------------*/
+/* 	@Tableaux
+/*-----------------------------------*/
+
+$table-background 		: $panel-background  ;
+
+/*-----------------------------------*/
+/* 	@Boite modal
+/*-----------------------------------*/
+
+$modal-ovelay 	    : rgba(darken($midnightblue,12%), 0.95);
+$modal-background 	: $clouds;
+$modal-close-color 	: $midnightblue;
+
+/*-----------------------------------*/
+/* 	@Formulaires					
+/*-----------------------------------*/
+
+/* input ---------*/
+$input-color-bg   		  : lighten($silver,25%) ;
+$input-color-border 	  : $silver ;
+$input-color-shadow-inset : inset 0 1px 2px rgba($asbestos,0.1) ;
+$input-color-shadow-focus : 0 0 2px rgba($asbestos-dark,0.5) ;
+$input-color-text   	  : $asbestos-dark ;
+
+/*-----------------------------------*/
+/* 	@Boutons & Dropdown				
+/*-----------------------------------*/
+
+/* boutons  ---------*/
+$btn-color-bg    : $belizehole ;
+$btn-color-text  : $clouds  ;
+
+/* boutons dropdown ---------*/
+$dropdown-background 	   : $panel-background  ;
+$dropdown-border-color 	   : darken($panel-background,16%)  ;
+$dropdown-background-hover : $midnightblue;
+$dropdown-font-color 	   : $midnightblue  ;
+$dropdown-font-color-hover : $panel-background  ;
+
+
