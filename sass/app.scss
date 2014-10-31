@@ -10,41 +10,41 @@
 /* compass */
 @import "compass";
 
-/* Tools */
+/* Tools ---------------------------------*/
 @import "tools/mixin";
 @import "tools/colors";
 @import "tools/settings";
 
-/* Base */
+/* Base ---------------------------------*/
 @import "base/reset";
 @import "base/reset-form";
 @import "base/normalize";
 @import "base/base";
 
-/* layout */
+/* layout ---------------------------------*/
 @import "layout/grid";
 @import "layout/page-layout";
 @import "layout/visibility";
 
-/* module */
+/* module ---------------------------------*/
 @import "module/page-header";
-@import "module/breadcrumb";
 @import "module/navigation";
-@import "module/dropdown";
-@import "module/panels";
-@import "module/thumbnails";
-@import "module/loader";
+@import "module/breadcrumb";
 @import "module/button";
-@import "module/table";
+@import "module/dropdown";
 @import "module/form";
 @import "module/panels";
+@import "module/table";
+@import "module/loader";
+@import "module/remodal";
+@import "module/thumbnails";
+@import "module/video";
 @import "module/lightbox";
 @import "module/lightbox-theme";
 @import "module/owl.carousel";
 @import "module/owl.carousel.theme";
-@import "module/remodal";
 
-/* font */
+/* font ---------------------------------*/
 @import "font/variables";
 @import "font/mixins";
 @import "font/path";
