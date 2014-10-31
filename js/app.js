@@ -115,28 +115,9 @@ $(document).ready(function(){
 	})
 
 /*  ==================================================================================
- *  $sidebar
+ *  $Equalizer
  *==================================================================================*/
- 	/*list toogle*/
- // 	$('.sidebar-list-item > ul').hide();
- // 	$('.sidebar-list-item>a').click(function(){
-		
-	// 	$(this).parent().children('ul').slideToggle(200);	
-	// });
-	// /*navigation*/
- // 	//$('#sidebar').hide();
- // 	var nav_state = 0;
- // 	$('.sidebar-toogle').click(function(){
-	// 	//$('#sidebar').toggle();
-	// 	if (nav_state == 0) {
-	// 		$( '#container').addClass('sidebar-hide');
-	// 		nav_state = 1;
-	// 	}
-	// 	else{
-	// 		$( '#container').removeClass('sidebar-hide');
-	// 		nav_state = 0;
-	// 	};
-	// });
+$('.equalizer').equalize();
 /*  ==================================================================================
  *  $sidebar
  *==================================================================================*/
