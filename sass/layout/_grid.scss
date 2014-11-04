@@ -64,7 +64,7 @@ max-width: 82em;
 /*  medium
 /* --------------------------------------- */
 
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: $medium-range) {
 	.medium-1  {width: 8.33333%; }
 	.medium-2  {width: 16.66667%; }
 	.medium-3  {width: 25%; }
@@ -83,7 +83,7 @@ max-width: 82em;
 /*  large
 /* --------------------------------------- */
 
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: $large-range) {
 	.large-1  {width: 8.33333%; }
 	.large-2  {width: 16.66667%; }
 	.large-3  {width: 25%; }

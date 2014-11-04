@@ -27,6 +27,9 @@
 /* background color ---------*/
 /* labels color ---------*/
 /*-----------------------------------*/
+/* 	@MediaQueries						
+/*-----------------------------------*/
+/*-----------------------------------*/
 /* 	@Typography 						
 /*-----------------------------------*/
 /* text fonts 		----------*/
@@ -1422,7 +1425,7 @@ img {
     transform: translateX(250px);
     overflow-y: hidden;
   }
-  /* line 158, ../sass/module/_navigation.scss */
+  /* line 152, ../sass/module/_navigation.scss */
   .with--sidebar .site-cache {
     position: absolute;
     height: 100%;
@@ -1436,7 +1439,7 @@ img {
   }
 
   /* icon */
-  /* line 171, ../sass/module/_navigation.scss */
+  /* line 165, ../sass/module/_navigation.scss */
   .navigation-toogle-icon {
     display: block !important;
     float: left;
@@ -1444,7 +1447,7 @@ img {
     padding: 0;
     width: 50px;
   }
-  /* line 178, ../sass/module/_navigation.scss */
+  /* line 172, ../sass/module/_navigation.scss */
   .navigation-toogle-icon:after {
     content: '';
     position: absolute;
@@ -1459,43 +1462,43 @@ img {
   }
 
   /* transformation  */
-  /* line 190, ../sass/module/_navigation.scss */
+  /* line 184, ../sass/module/_navigation.scss */
   .navigation-hide .navigation {
     transform: translateX(-250px);
   }
 
-  /* line 193, ../sass/module/_navigation.scss */
+  /* line 187, ../sass/module/_navigation.scss */
   .navigation-list {
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
-  /* line 199, ../sass/module/_navigation.scss */
+  /* line 193, ../sass/module/_navigation.scss */
   .navigation-list-item {
     margin: 0;
     padding: 0;
   }
 
-  /* line 203, ../sass/module/_navigation.scss */
+  /* line 197, ../sass/module/_navigation.scss */
   .navigation-list-item,
   .navigation-list-item ul li {
     border-bottom: 1px solid #354b60;
   }
 
-  /* line 207, ../sass/module/_navigation.scss */
+  /* line 201, ../sass/module/_navigation.scss */
   .navigation-list-item a,
   .navigation-list-item ul li a {
     border-left: 4px solid transparent;
   }
 
-  /* line 211, ../sass/module/_navigation.scss */
+  /* line 205, ../sass/module/_navigation.scss */
   .navigation-list-item a:hover,
   .navigation-list-item ul li a:hover {
     border-left: 4px solid #16A085;
   }
 
-  /* line 215, ../sass/module/_navigation.scss */
+  /* line 209, ../sass/module/_navigation.scss */
   .navigation-list-item a {
     display: block;
     padding-right: 2rem;
@@ -1503,26 +1506,26 @@ img {
     color: white;
   }
 
-  /* line 222, ../sass/module/_navigation.scss */
+  /* line 216, ../sass/module/_navigation.scss */
   .navigation-list-item a:hover {
     background: #1a242f;
     color: #e0e0e0;
   }
 
-  /* line 226, ../sass/module/_navigation.scss */
+  /* line 220, ../sass/module/_navigation.scss */
   .navigation-list-item a i {
     display: block;
     line-height: 54px;
   }
 
-  /* line 231, ../sass/module/_navigation.scss */
+  /* line 225, ../sass/module/_navigation.scss */
   .navigation-list-item ul {
     margin: 0;
     padding: 0;
     background: #233140;
   }
 
-  /* line 236, ../sass/module/_navigation.scss */
+  /* line 230, ../sass/module/_navigation.scss */
   .navigation-list-item ul li a {
     display: block;
     padding-right: 2rem;

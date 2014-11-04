@@ -148,12 +148,6 @@
 		.container {
 			@include transform(translateX($navigation-width));
 			overflow-y: hidden;
-
-		    // -webkit-filter: blur(1px);
-		    // -moz-filter: blur(1px);
-		    // -o-filter: blur(1px);
-		    // -ms-filter: blur(1px);
-		    // filter: blur(1px); 
 		}
 		.site-cache{
 			position: absolute;

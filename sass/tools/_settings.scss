@@ -19,13 +19,21 @@ $warning: $orange ;
 $alert: $pomegranate;
 
 /*-----------------------------------*/
+/* 	@MediaQueries						
+/*-----------------------------------*/
+
+$medium-range : 40.063em;
+$large-range  : 64.063em ;
+
+
+/*-----------------------------------*/
 /* 	@Typography 						
 /*-----------------------------------*/
 
 $font-size : 14px;
 
 /* text fonts 		----------*/
-$font-1:  sans-serif;
+$font-1: sans-serif;
 $font-2: sans-serif;
 
 /* text color 		----------*/

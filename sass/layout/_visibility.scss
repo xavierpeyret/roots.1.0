@@ -21,7 +21,7 @@
 /*  medium
 /* --------------------------------------- */
 
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: $medium-range) {
 	.show-medium, .hide-small,.hide-large {display: inherit !important; }
 	.hide-medium, .show-large, .show-small {display: none !important; }
 }
@@ -30,7 +30,7 @@
 /*  large
 /* --------------------------------------- */
 
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: $large-range) {
 	.show-large,.hide-small, .hide-medium {display: inherit !important; }
 	.hide-large, .show-medium, .show-small {display: none !important;}
 }
