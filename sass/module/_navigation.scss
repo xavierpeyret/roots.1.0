@@ -146,24 +146,25 @@
 	.with--sidebar{
 		.navigation {@include transform(translateX(0px));}
 		.container {
-			-webkit-filter: blur(3px);
-		    -moz-filter: blur(3px);
-		    -o-filter: blur(3px);
-		    -ms-filter: blur(3px);
-		    filter: blur(3px);
 			@include transform(translateX($navigation-width));
+			overflow-y: hidden;
+
+		    // -webkit-filter: blur(1px);
+		    // -moz-filter: blur(1px);
+		    // -o-filter: blur(1px);
+		    // -ms-filter: blur(1px);
+		    // filter: blur(1px); 
 		}
 		.site-cache{
 			position: absolute;
-			height: 120%;
-			width: 120%;
-			top: -20px;
-			left: -20px;
+			height: 100%;
+			width: 100%;
+			top: 0px;
+			left: 0px;
 			right: 0;
 			bottom: 0;
-			background: rgba(0,0,0,0.2);
+			background: rgba(0,0,0,0.6);
 			z-index: 20;
-
 		}
 	}
 	 /* icon */
@@ -237,8 +238,4 @@
 		padding-right: 2rem;
 		padding-left: 3rem; 
 	} 
-
-
-	
 }
-
