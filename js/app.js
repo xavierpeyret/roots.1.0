@@ -8,7 +8,8 @@ $(document).ready(function(){
 
 	tinyMCE.init({
 		// General options
-		selector: "#tinymce",
+		content_css : "stylesheets/app.css",
+		selector: ".tinymce",
 		theme: "modern",
 		height: 200,
 		plugins: [

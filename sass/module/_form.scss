@@ -106,5 +106,13 @@ label.inline {
 	margin: 0 0 1rem 0;
 	padding: 0.5625rem 0; 
 }
-
-
+/* --------------------------------------- */
+/* tinymce
+/* --------------------------------------- */
+.tynimce-wrap {
+	min-height: 100%; 
+	margin: 0 0 1rem 0;
+}
+.mce-content-body {
+	padding: 0.5rem;
+}
