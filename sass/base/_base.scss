@@ -17,7 +17,7 @@ body {
 	
 	font-family: $font-1;
 	font-size: $font-size;
-	color : $asbestos-dark;
+	color : $text-color-base;
 }
 
 html, body , button, input, 
@@ -42,12 +42,12 @@ h1, h2, h3, h4, h5, h6{
 	}
 } 
 
-h1 { font-size: 2rem; }
-h2 { font-size: 1.85rem; }
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.25rem; }
-h5 { font-size: 1rem; }
-h6 { font-size: 0.85rem; }
+h1 { font-size: 2rem; margin-bottom: 2rem; }
+h2 { font-size: 1.85rem; margin-bottom: 1.85rem; }
+h3 { font-size: 1.5rem; margin-bottom: 1.5rem; }
+h4 { font-size: 1.25rem; margin-bottom: 1.25rem; }
+h5 { font-size: 1rem; margin-bottom: 1rem; }
+h6 { font-size: 0.85rem; margin-bottom: 0.85rem; }
 
 
 /* --------------------------------------- */
@@ -59,11 +59,9 @@ p {
 	line-height: 1.5rem;
 	text-align: left;
 	text-shadow: $text-shadow-base;
-	a:hover{
-		text-decoration: underline;
-	}
 }
 .text-lead{
+	color: $text-color-title;
 	font-size: 1.25rem;
 	font-weight: bold;
 
@@ -76,7 +74,7 @@ p {
 span { display: inline-block;}
 strong, b { 
 	font-weight: bold;
-	color: darken($text-color-base,5%) ;
+	color: $text-color-strong  ;
 	text-shadow: $text-shadow-strong; 
 }
 
@@ -86,6 +84,7 @@ blockquote{
 	p{
 		margin: 0px;
 
+		font-style: italic;
 		font-size: 1.115rem;
 	}
 }
@@ -128,6 +127,10 @@ img {
 /* --------------------------------------- */
 /* @group other
 /* --------------------------------------- */
+
+hr{
+	border: 1px solid $hr-color ;
+}
 
 .left {float: left !important;}
 .right {float: right !important;}

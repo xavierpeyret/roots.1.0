@@ -12,6 +12,8 @@ $margin: 1.85em;
 /* background color ---------*/
 $body-background : lighten($clouds,5%);
 
+$hr-color: $silver;
+
 /* labels color ---------*/
 $primary: $asbestos;
 $success: $nephritis;
@@ -37,21 +39,21 @@ $font-1: sans-serif;
 $font-2: sans-serif;
 
 /* text color 		----------*/
-$text-color-base   		: $asbestos-dark;
+$text-color-base   		: $asbestos;
 $text-color-link   		: $belizehole ;
 $text-color-title 		: $wetasphalt;
-$text-color-strong 		: $wetasphalt;
+$text-color-strong 		: darken($asbestos,5%);
 $text-color-second 		: $wetasphalt;
 $text-color-selection 	: $sunflower ;
 
 /* text shadow		----------*/
-$text-shadow-base 	: 0 0 0px $asbestos;
-$text-shadow-strong : 0 0 0px $belizehole;
-$text-shadow-title  : 0 0 0px $belizehole;
-$text-shadow-second : 0 0 0px $belizehole;
+$text-shadow-base 	: 0 0 0px rgba(0,0,0,0);
+$text-shadow-strong : 0 0 0px rgba(0,0,0,0);
+$text-shadow-title  : 0 0 0px rgba(0,0,0,0);
+$text-shadow-second : 0 0 0px rgba(0,0,0,0);
 
 /* text anotation	----------*/
-$blockote-border-color : $asbestos ; 
+$blockote-border-color : $belizehole  ; 
 
 /*-----------------------------------*/
 /* 	@Panel		
@@ -60,10 +62,8 @@ $blockote-border-color : $asbestos ;
 $panel-background : lighten($clouds,4%);
 $panel-border 	  : $asbestos;
 $panel-shadow 	  : 0px 0px 0px rgba($panel-background,.2);
-
-/* dark ----------*/
-$panel-dark-background : $wetasphalt;
-$panel-dark-font-color : #FFFFFF;
+$panel-head-background : $wetasphalt;
+$panel-head-font-color : #FFFFFF;
 
 /*-----------------------------------*/
 /* 	@Media & Images
