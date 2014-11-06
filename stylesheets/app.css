@@ -867,6 +867,16 @@ hr {
 }
 
 /* line 138, ../sass/base/_base.scss */
+.radius {
+  border-radius: 4px;
+}
+
+/* line 139, ../sass/base/_base.scss */
+.circle {
+  border-radius: 50%;
+}
+
+/* line 141, ../sass/base/_base.scss */
 .clearfix {
   clear: both;
 }
@@ -1914,17 +1924,12 @@ label.inline {
 }
 
 /* line 19, ../sass/module/_panels.scss */
-.panel.radius {
-  border-radius: 20px;
-}
-
-/* line 21, ../sass/module/_panels.scss */
 .panel.panel-default {
   padding: 0rem;
   padding-bottom: 1.25rem;
 }
 
-/* line 23, ../sass/module/_panels.scss */
+/* line 21, ../sass/module/_panels.scss */
 .panel.panel-default > .panel-heading {
   background: #f8f9fa;
   padding: 0.61667em 0.925em;
@@ -1932,10 +1937,20 @@ label.inline {
   font-weight: bold;
 }
 
-/* line 29, ../sass/module/_panels.scss */
+/* line 27, ../sass/module/_panels.scss */
 .panel.panel-default > .panel-heading.dark {
   background: #34495e;
   color: #FFFFFF;
+}
+
+/* line 31, ../sass/module/_panels.scss */
+.panel.panel-default.radius > .panel-heading.dark {
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 /* line 2, ../sass/module/_table.scss */

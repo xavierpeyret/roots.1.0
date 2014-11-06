@@ -135,4 +135,7 @@ hr{
 .left {float: left !important;}
 .right {float: right !important;}
 
-.clearfix{clear: both;}
+.radius {border-radius: $radius;}
+.circle {border-radius: 50%;}
+
+.clearfix {clear: both;}

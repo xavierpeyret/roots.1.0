@@ -16,8 +16,6 @@
 .panel > :first-child {margin-top: 0; }
 .panel > :last-child  {margin-bottom: 0; }
 
-.panel.radius {border-radius: 20px;}
-
 .panel.panel-default {padding: 0rem; padding-bottom: 1.25rem;}
 
 .panel.panel-default>.panel-heading {
@@ -29,4 +27,12 @@
 .panel.panel-default>.panel-heading.dark{
 	background: $panel-head-background;
 	color: $panel-head-font-color;
+}
+.panel.panel-default.radius>.panel-heading.dark{
+	-webkit-border-top-left-radius: $radius ;
+	-webkit-border-top-right-radius: $radius ;
+	-moz-border-radius-topleft: $radius ;
+	-moz-border-radius-topright: $radius ;
+	border-top-left-radius: $radius ;
+	border-top-right-radius: $radius ;
 }
