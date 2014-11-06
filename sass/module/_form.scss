@@ -107,11 +107,13 @@ label.inline {
 	padding: 0.5625rem 0; 
 }
 /* --------------------------------------- */
-/* checkbox Styles 
+/* checkbox & radio Styles 
 /* --------------------------------------- */
-.checkbox {
+/* general -------------- */
+.checkbox, .radio{
 	margin-bottom: 1rem;
-	input[type="checkbox"]{display: none;}
+	input[type="checkbox"], input[type="radio"]{display: none;}
+
 	label{
 		position: relative;
 		display: block;
@@ -123,63 +125,35 @@ label.inline {
 			position: absolute;
 			top: 0; left: 0;
 			background: lighten($input-check-color, 10%);
-			border-radius: 4px;
 			@include transition-duration();
 		}
 		i{
 			height: 20px;width: 20px;
 			position: absolute;
-			top: 3px; left: 2px;
 			color: rgba(0,0,0,0);
 			@include transition-duration();
 		}
 		&:hover:before{ background: $input-check-color-focus;}
 	}
-	input[type="checkbox"]:checked + label {
+	input[type="checkbox"]:checked + label, input[type="radio"]:checked + label {
 		&:before {background: $input-check-color-focus;}
 		i {color: lighten($input-check-color, 20%);}	
 	}
+	
 }
-/* --------------------------------------- */
-/* checkbox Styles 
-/* --------------------------------------- */
-.radio {
-	margin-bottom: 1rem;
-	input[type="radio"]{display: none;}
+/* checkbox -------------- */
+.checkbox {
 	label{
-		position: relative;
-		display: block;
-		margin-bottom: 0.5rem;
-		padding-left:  31px;
-		&:before {
-			content: '';
-			height: 20px;width: 20px;
-			position: absolute;
-			top: 0; left: 0;
-			background: lighten($input-check-color, 10%);
-			border-radius: 50%;
-			@include transition-duration();
-		}
-		i{
-			height: 20px;width: 20px;
-			position: absolute;
-			top: 3px; left: 4px;
-			color: rgba(0,0,0,0);
-			@include transition-duration();
-		}
-		
-		&:hover:before{
-			background: $input-check-color-focus;
-		}
-		
+		&:before {border-radius: 4px;	}
+		i{top: 3px; left: 2px;}
 	}
-	input[type="radio"]:checked + label {
-		&:before {
-			background: $input-check-color-focus;
-		}
-		i{
-			color: lighten($input-check-color, 20%);
-		}	
+}
+
+/* radio -------------- */
+.radio {
+	label{
+		&:before {border-radius: 50%;}
+		i{top: 3px; left: 4px;}	
 	}
 }
 /* --------------------------------------- */
