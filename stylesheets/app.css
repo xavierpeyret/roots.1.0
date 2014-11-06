@@ -1880,15 +1880,133 @@ label.inline {
 }
 
 /* --------------------------------------- */
-/* tinymce
+/* checkbox Styles 
 /* --------------------------------------- */
 /* line 112, ../sass/module/_form.scss */
+.checkbox {
+  margin-bottom: 1rem;
+}
+/* line 114, ../sass/module/_form.scss */
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+/* line 115, ../sass/module/_form.scss */
+.checkbox label {
+  position: relative;
+  display: block;
+  margin-bottom: 0.5rem;
+  padding-left: 31px;
+}
+/* line 120, ../sass/module/_form.scss */
+.checkbox label:before {
+  content: '';
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #d9dcde;
+  border-radius: 4px;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 129, ../sass/module/_form.scss */
+.checkbox label i {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  color: transparent;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 136, ../sass/module/_form.scss */
+.checkbox label:hover:before {
+  background: #1abc9c;
+}
+/* line 139, ../sass/module/_form.scss */
+.checkbox input[type="checkbox"]:checked + label:before {
+  background: #1abc9c;
+}
+/* line 140, ../sass/module/_form.scss */
+.checkbox input[type="checkbox"]:checked + label i {
+  color: #f4f5f6;
+}
+
+/* --------------------------------------- */
+/* checkbox Styles 
+/* --------------------------------------- */
+/* line 146, ../sass/module/_form.scss */
+.radio {
+  margin-bottom: 1rem;
+}
+/* line 148, ../sass/module/_form.scss */
+.radio input[type="radio"] {
+  display: none;
+}
+/* line 149, ../sass/module/_form.scss */
+.radio label {
+  position: relative;
+  display: block;
+  margin-bottom: 0.5rem;
+  padding-left: 31px;
+}
+/* line 154, ../sass/module/_form.scss */
+.radio label:before {
+  content: '';
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #d9dcde;
+  border-radius: 50%;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 163, ../sass/module/_form.scss */
+.radio label i {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  color: transparent;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 171, ../sass/module/_form.scss */
+.radio label:hover:before {
+  background: #1abc9c;
+}
+/* line 177, ../sass/module/_form.scss */
+.radio input[type="radio"]:checked + label:before {
+  background: #1abc9c;
+}
+/* line 180, ../sass/module/_form.scss */
+.radio input[type="radio"]:checked + label i {
+  color: #f4f5f6;
+}
+
+/* --------------------------------------- */
+/* tinymce
+/* --------------------------------------- */
+/* line 188, ../sass/module/_form.scss */
 .tynimce-wrap {
   min-height: 100%;
   margin: 0 0 1rem 0;
 }
 
-/* line 116, ../sass/module/_form.scss */
+/* line 192, ../sass/module/_form.scss */
 .mce-content-body {
   padding: 0.5rem;
   background-color: white;
