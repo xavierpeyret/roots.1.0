@@ -2010,15 +2010,16 @@ label.inline {
   padding: 0.61667em 0.925em;
   border-bottom: 1px solid #d5dde0;
   font-weight: bold;
+  margin-bottom: 1.25rem;
 }
 
-/* line 27, ../sass/module/_panels.scss */
+/* line 28, ../sass/module/_panels.scss */
 .panel.panel-default > .panel-heading.dark {
   background: #34495e;
   color: #FFFFFF;
 }
 
-/* line 31, ../sass/module/_panels.scss */
+/* line 32, ../sass/module/_panels.scss */
 .panel.panel-default.radius > .panel-heading.dark {
   -webkit-border-top-left-radius: 4px;
   -webkit-border-top-right-radius: 4px;
